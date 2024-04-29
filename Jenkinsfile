@@ -26,7 +26,7 @@ pipeline {
       steps {
         sh './jenkins/scripts/test.sh'
         input 'Finished using the web site? (Select "Proceed" to continue)'
-        sh './jenkins/scripts/kill.sh.'
+        sh './jenkins/scripts/kill.sh'
       }
     }
 
